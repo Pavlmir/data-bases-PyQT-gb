@@ -1,4 +1,4 @@
-data-bases-PyQT-gb-project
+# data-bases-PyQT-gb-project
 
 Базы данных и PyQT
 
