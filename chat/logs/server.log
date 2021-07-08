@@ -1,0 +1,22 @@
+2021-07-08 20:43:57,772 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-07-08 20:44:47,696 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-07-08 20:46:46,619 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-07-08 20:46:55,007 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-07-08-20.46.55', 'user': {'account_name': 'Guest'}} 
+2021-07-08 20:46:55,007 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-07-08 20:46:55,011 - INFO - decorators: deco_log_call - Thu Jul  8 20:46:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-07-08-20.46.55', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-07-08 20:46:55,011 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-07-08 20:46:55,012 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-07-08 20:46:55,012 - INFO - server: start_server - Получен запрос на соединение от ('127.0.0.1', 64540) 
+2021-07-08 20:46:55,046 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-07-08-20.46.55', 'user': {'account_name': 'Guest'}} 
+2021-07-08 20:46:55,046 - INFO - server: check_correct_presence_and_response - Запуск функции проверки корректности запроса 
+2021-07-08 20:46:55,048 - INFO - decorators: deco_log_call - Thu Jul  8 20:46:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами ({'action': 'presence', 'time': '2021-07-08-20.46.55', 'user': {'account_name': 'Guest'}},) из функции main() 
+2021-07-08 20:46:55,049 - INFO - server: start_server - Приветствуем пользователя Guest! 
+2021-07-08 20:46:55,050 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-07-08 20:46:55,050 - INFO - server: start_server - Получен запрос на соединение от ('127.0.0.1', 64541) 
+2021-07-08 20:47:00,667 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
+2021-07-08 20:47:02,548 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
+2021-07-08 20:47:04,203 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
+2021-07-08 20:47:09,926 - INFO - server: read_messages - Принято сообщение от клиента: Guest 
