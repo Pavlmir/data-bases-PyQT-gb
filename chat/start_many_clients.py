@@ -12,7 +12,7 @@ while True:
         process_list.append(Popen(f'python server.py',
                                   creationflags=CREATE_NEW_CONSOLE))
         time.sleep(2)
-        for user in user_lists[:8]:
+        for user in user_lists:
             process_list.append(Popen(f'python -i client.py -a localhost -p 7777 -u {user}',
                                       creationflags=CREATE_NEW_CONSOLE))
             # process_list[-1].communicate('pause')

@@ -7,18 +7,15 @@ import subprocess
 import sys
 from os.path import dirname, join
 
-all_servers = []
-all_clients = []
-# полный текущий путь чата
-work_dir = join(dirname(dirname(os.path.abspath(__file__))), 'chat')
-while True:
+
+def launcher_messenger():
     ask = input('Выход - q, запустить сервер и 2 клиента - x, '
                 'завершить работу серверов - w, завершить работу клиентов - e,'
                 ' завершить все запущенные процессы - k\n')
 
     # выход
     if ask == 'q':
-        break
+        sys.exit()
 
     # Запуск
     if ask == 'x':
@@ -87,3 +84,11 @@ while True:
             else:
                 os.killpg(os.getpgid(item.pid), signal.SIGTERM)
         print(f'клиентов \"убито\": {count}')
+
+
+if __name__ == "__main__":
+    all_servers = []
+    all_clients = []
+    # полный текущий путь чата
+    work_dir = join(dirname(dirname(os.path.abspath(__file__))), 'chat')
+    launcher_messenger()

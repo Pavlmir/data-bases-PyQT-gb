@@ -15,9 +15,7 @@ b. сервер отвечает соответствующим кодом ре�
 """
 import re
 import sys
-import time
 
-import logs.config.client_config_log
 import argparse
 import logging
 import decorators
@@ -28,7 +26,7 @@ import threading
 import socket
 from config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     OK, server_port, server_address, StandartServerCodes, UnknownCode, \
-    MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE, alive
+    MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE
 
 log = logging.getLogger('Client_log')
 logger = decorators.Log(log)
