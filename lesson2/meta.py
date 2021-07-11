@@ -29,9 +29,6 @@ class ServerVerifier(type):
         if 'connect' in methods:
             raise Exception('Серверное приложение не должно использовать вызов connect!')
 
-        # print(methods)
-        # print(method_attributes)
-        # print(class_attributes)
         super().__init__(class_name, bases, class_dict)
 
 
@@ -61,9 +58,5 @@ class ClientVerifier(type):
 
         if 'accept' in methods or 'listen' in methods or 'socket' in methods:
             raise Exception('Клиентское приложение не должно использовать вызов accept или listen!')
-
-        # print(methods)
-        # print(method_attributes)
-        # print(class_attributes)
 
         super().__init__(class_name, bases, class_dict)
