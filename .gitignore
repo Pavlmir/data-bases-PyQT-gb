@@ -1,3 +1,7 @@
 # IntelliJ project files
-/.idea/
+.idea/
 *.iml
+
+chat/logs/client.log
+chat/logs/server.log
+
