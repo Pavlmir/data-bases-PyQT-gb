@@ -20,7 +20,6 @@ from config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
     MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL
 import socket
 import decorators
-import chat.logs.server_config_log
 import argparse
 import pickle
 
@@ -189,7 +188,7 @@ if __name__ == "__main__":
     # Показывать лог в консоль при запуске сервера напрямую
     server_stream_handler = logging.StreamHandler(sys.stdout)
     server_stream_handler.setLevel(logging.INFO)
-    server_stream_handler.setFormatter(chat.logs.server_config_log.log_format)
+    server_stream_handler.setFormatter(lesson1.chat.logs.server_config_log.log_format)
     log.addHandler(server_stream_handler)
 
     start_server()
