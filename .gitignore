@@ -2,6 +2,7 @@
 .idea/
 *.iml
 
-chat/logs/client.log
-chat/logs/server.log
-
+lesson1/chat/logs/client.log
+lesson1/chat/logs/server.log
+lesson2/logs/client.log
+lesson2/logs/server.log
