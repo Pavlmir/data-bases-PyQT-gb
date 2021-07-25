@@ -1,6 +1,6 @@
 import sys
 import logging
-from lesson4.decorators import Log
+
 from PyQt5.QtSql import QSqlRelationalTableModel, QSqlTableModel, QSqlRelationalDelegate, QSqlDatabase
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5 import uic
