@@ -9,3 +9,6 @@ lesson2/logs/server.log
 lesson3/logs/client.log
 lesson3/logs/server.log
 lesson3/server_base.db3
+lesson4/logs/client.log
+lesson4/logs/server.log
+lesson4/server/server_base.db3
