@@ -74,7 +74,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>251</width>
+      <width>271</width>
       <height>411</height>
      </rect>
     </property>
@@ -120,12 +120,25 @@
      <rect>
       <x>10</x>
       <y>450</y>
-      <width>151</width>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>Обновить список контактов</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_add_contact">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>450</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить контакт</string>
     </property>
    </widget>
   </widget>

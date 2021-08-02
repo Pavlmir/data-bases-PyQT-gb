@@ -1,7 +1,7 @@
 import logging
 import select
 import sys
-from client.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
+from lesson5.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
     ERROR, server_port, server_address, FROM, SHUTDOWN, \
     MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL, UNKNOWN_ERROR, GET_CONTACTS, USER_LOGIN
 import socket
