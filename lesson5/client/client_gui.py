@@ -29,7 +29,6 @@ class UI(QMainWindow):
         self.contacts_model = None
         self.connect()
 
-
         self.btn_get_list.clicked.connect(self.show_table)
         self.setWindowTitle('Приложение чат - клиент')
 
