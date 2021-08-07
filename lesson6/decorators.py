@@ -37,7 +37,7 @@ def login_required(func):
     @wraps(func)
     def checker(*args, **kwargs):
         from lesson6.server.server import Server
-        from config import ACTION, PRESENCE
+        from lesson6.config import ACTION, PRESENCE
         if isinstance(args[0], Server):
             found = False
             for arg in args:

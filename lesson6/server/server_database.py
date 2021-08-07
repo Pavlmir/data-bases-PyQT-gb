@@ -6,10 +6,10 @@ from sqlalchemy.orm import declarative_base
 import datetime
 import hashlib
 
+Base = declarative_base()
+
 
 class ServerStorage:
-    Base = declarative_base()
-
     # Отображение таблицы всех пользователей
     class AllUsers(Base):
         __tablename__ = 'all_users'
@@ -89,7 +89,7 @@ class ServerStorage:
                                     connect_args={'check_same_thread': False})
 
         # Создаём таблицы
-        self.Base.metadata.create_all(self.engine)
+        Base.metadata.create_all(self.engine)
 
         # Создаём сессию
         session = sessionmaker(bind=self.engine)
