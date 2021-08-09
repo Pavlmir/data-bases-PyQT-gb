@@ -1,0 +1,21 @@
+> make html
+Running Sphinx v1.5.3
+loading translations [ru]... done
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 1 source files that are out of date
+updating environment: 0 added, 1 changed, 0 removed
+reading sources... [100%] example
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index
+generating indices... genindex
+writing additional pages... search
+copying static files... done
+copying extra files... done
+dumping search index in Russian (code: ru) ... done
+dumping object inventory... done
+build succeeded.
+Build finished. The HTML pages are in build\html.
