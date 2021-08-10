@@ -1,3 +1,4 @@
+"""Данные для подключения"""
 server_address = '0.0.0.0'
 server_port = 7780
 mode = 'f'
@@ -57,3 +58,7 @@ class UnknownCode(Exception):
 
     def __str__(self):
         return f'Неизвестный код ответа {self.code}'
+
+
+if __name__ == "__main__":
+    ...

@@ -16,7 +16,6 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
-    <link rel="next" title="Views" href="views.html" />
     <link rel="prev" title="Log configs" href="logs.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -38,6 +37,24 @@
 <h1>Messenger<a class="headerlink" href="#messenger" title="Ссылка на этот заголовок">¶</a></h1>
 <p>server.py
 Запускаемый модуль,содержит аргументы командной строки и функционал серверного приложения.</p>
+<span class="target" id="module-client_chat.client"></span><span class="target" id="module-config"></span><p>Данные для подключения</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="config.UnknownCode">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">config.</span></span><span class="sig-name descname"><span class="pre">UnknownCode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/config.html#UnknownCode"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#config.UnknownCode" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="server_chat.server.Server">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server_chat.server.</span></span><span class="sig-name descname"><span class="pre">Server</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serv_addr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.0.0.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serv_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">7780</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/server_chat/server.html#Server"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#server_chat.server.Server" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Запуск сервера</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="server_chat.server.ServerSocket">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">server_chat.server.</span></span><span class="sig-name descname"><span class="pre">ServerSocket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p_addr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.0.0.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">7777</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/server_chat/server.html#ServerSocket"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#server_chat.server.ServerSocket" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Запуск сокета для прослушивания клиентов</p>
+</dd></dl>
+
 </section>
 
 
@@ -61,8 +78,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="logs.html">Log configs</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Messenger</a></li>
-<li class="toctree-l1"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
 </ul>
 
 <div class="relations">
@@ -70,7 +85,6 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
       <li>Previous: <a href="logs.html" title="предыдущая глава">Log configs</a></li>
-      <li>Next: <a href="views.html" title="следующая глава">Views</a></li>
   </ul></li>
 </ul>
 </div>

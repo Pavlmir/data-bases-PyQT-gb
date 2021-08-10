@@ -12,8 +12,6 @@ Welcome to messenger's documentation!
 
    modules/logs
    modules/messenger
-   modules/views
-   modules/models
 
 
 

@@ -19,6 +19,7 @@ logger = Log(log)
 
 
 class ServerSocket(socket.socket):
+    """Запуск сокета для прослушивания клиентов"""
     port = SockVerify()
     address = SockVerify()
 
@@ -32,6 +33,7 @@ class ServerSocket(socket.socket):
 
 
 class Server(metaclass=ServerVerifier):
+    """Запуск сервера"""
     global log, logger
     # Список сокетов клиентов и словарь аккаунтов клиентов с информацией о сокете
     clients = []

@@ -1,8 +1,0 @@
-############
-Views
-############
-
-
-.. automodule:: yourapp.views
-   :members:
-   :undoc-members:
