@@ -1,0 +1,14 @@
+2021-08-07 16:49:29,444 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-08-07 16:49:54,733 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-08-07 16:50:16,677 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52838 
+2021-08-07 16:50:16,709 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-08-07-16.50.16', 'user': {'account_name': 'ывм', 'account_password': 123}} 
+2021-08-07 16:50:16,718 - INFO - decorators: deco_log_call - Sat Aug  7 16:50:16 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<server.Server object at 0x000001E36FE8CF40>, {'action': 'presence', 'time': '2021-08-07-16.50.16', 'user': {'account_name': 'ывм', 'account_password': 123}}) из функции main() 
+2021-08-07 16:50:16,718 - INFO - server: start_server - Приветствуем пользователя ывм! 
+2021-08-07 16:50:16,719 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-08-07 16:50:18,274 - INFO - server: read_messages - Принято сообщение от клиента: ывм 
+2021-08-07 16:50:19,936 - INFO - server: read_messages - Принято сообщение от клиента: ывм 
+2021-08-07 16:50:20,938 - INFO - server: read_messages - Принято сообщение от клиента: ывм 
+2021-08-07 16:50:23,706 - INFO - server: read_messages - Принято сообщение от клиента: ывм 
+2021-08-07 16:50:24,592 - INFO - server: read_messages - Принято сообщение от клиента: ывм 

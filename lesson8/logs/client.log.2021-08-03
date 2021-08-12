@@ -1,0 +1,32 @@
+2021-07-31 20:42:08,735 - INFO - client: start_client - Запуск клиента 
+2021-07-31 20:42:19,703 - ERROR - client: start_client - Полученный адрес сервера или порт не является строкой или числом! 
+2021-08-02 23:58:46,161 - INFO - client: start_client - Запуск клиента 
+2021-08-03 00:08:32,952 - INFO - client: start_client - Запуск клиента 
+2021-08-03 00:08:38,347 - INFO - client: start_client -  Попытка подключения к localhost 7780 
+2021-08-03 00:08:40,386 - ERROR - client: start_client - Ошибка подключения: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение 
+2021-08-03 00:09:44,367 - INFO - client: start_client - Запуск клиента 
+2021-08-03 00:09:51,564 - INFO - client: start_client -  Попытка подключения к localhost 7780 
+2021-08-03 00:09:51,573 - DEBUG - client: create_presence_message - Формирование приветственного сообщения 
+2021-08-03 00:09:51,580 - INFO - decorators: deco_log_call - Tue Aug  3 00:09:51 2021 Вызван декоратор Log для create_presence_message с параметрами (<client.Client object at 0x000002176FDFAD00>, 'Simple', 'presence') из функции main() 
+2021-08-03 00:09:51,580 - DEBUG - client: start_client - Отправляю приветственное сообщение "{'action': 'presence', 'time': '2021-08-03-00.09.51', 'user': {'account_name': 'Simple', 'account_password': 123}}" на сервер 
+2021-08-03 00:09:51,581 - DEBUG - client: start_client - и жду ответа 
+2021-08-03 00:09:51,586 - DEBUG - client: start_client - Ответ: {'response': 200} 
+2021-08-03 00:09:51,587 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-08-03 00:09:51,587 - DEBUG - client: start_client - Клиент в полнофункциональном режиме 
+2021-08-03 00:09:55,235 - DEBUG - client: client_writer - Формирование обычного сообщения 
+2021-08-03 00:09:55,236 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-08-03-00.09.55', 'to': '#all', 'from': 'Simple', 'message': 'sb'} 
+2021-08-03 00:09:55,332 - INFO - client: client_reader - Получено сообщение с сервера: {'action': 'msg', 'time': '2021-08-03-00.09.55', 'to': '#all', 'from': 'Simple', 'message': 'Simple:> sb'} 
+2021-08-03 00:10:12,602 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
+2021-08-03 00:10:39,485 - INFO - client: start_client - Запуск клиента 
+2021-08-03 00:10:44,490 - INFO - client: start_client -  Попытка подключения к localhost 7780 
+2021-08-03 00:10:44,498 - DEBUG - client: create_presence_message - Формирование приветственного сообщения 
+2021-08-03 00:10:44,505 - INFO - decorators: deco_log_call - Tue Aug  3 00:10:44 2021 Вызван декоратор Log для create_presence_message с параметрами (<client.Client object at 0x000001A416E15970>, 'Simple', 'presence') из функции main() 
+2021-08-03 00:10:44,505 - DEBUG - client: start_client - Отправляю приветственное сообщение "{'action': 'presence', 'time': '2021-08-03-00.10.44', 'user': {'account_name': 'Simple', 'account_password': 123}}" на сервер 
+2021-08-03 00:10:44,506 - DEBUG - client: start_client - и жду ответа 
+2021-08-03 00:10:44,511 - DEBUG - client: start_client - Ответ: {'response': 200} 
+2021-08-03 00:10:44,511 - INFO - client: start_client - Авторизация успешна. Соединение установлено! 
+2021-08-03 00:10:44,512 - DEBUG - client: start_client - Клиент в полнофункциональном режиме 
+2021-08-03 00:10:47,042 - DEBUG - client: client_writer - Формирование обычного сообщения 
+2021-08-03 00:10:47,043 - INFO - client: client_writer - Отправлено сообщение на сервер: {'action': 'msg', 'time': '2021-08-03-00.10.47', 'to': '#all', 'from': 'Simple', 'message': 'fbd'} 
+2021-08-03 00:10:47,150 - INFO - client: client_reader - Получено сообщение с сервера: {'action': 'msg', 'time': '2021-08-03-00.10.47', 'to': '#all', 'from': 'Simple', 'message': 'Simple:> fbd'} 
+2021-08-03 00:10:53,689 - ERROR - client: client_reader - Reader: Сервер разорвал соединение или получен некорректный ответ! 
