@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>config &#8212; документация messenger 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Исходный код config</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Данные для подключения&quot;&quot;&quot;</span>
+<span class="n">server_address</span> <span class="o">=</span> <span class="s1">&#39;0.0.0.0&#39;</span>
+<span class="n">server_port</span> <span class="o">=</span> <span class="mi">7780</span>
+<span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;f&#39;</span>
+<span class="n">account</span> <span class="o">=</span> <span class="s1">&#39;Guest&#39;</span>
+<span class="n">alive</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">ACTION</span> <span class="o">=</span> <span class="s1">&#39;action&#39;</span>
+<span class="n">TIME</span> <span class="o">=</span> <span class="s1">&#39;time&#39;</span>
+<span class="n">USER</span> <span class="o">=</span> <span class="s1">&#39;user&#39;</span>
+
+<span class="n">ACCOUNT_NAME</span> <span class="o">=</span> <span class="s1">&#39;account_name&#39;</span>
+<span class="n">RESPONSE</span> <span class="o">=</span> <span class="s1">&#39;response&#39;</span>
+<span class="n">ERROR</span> <span class="o">=</span> <span class="s1">&#39;error&#39;</span>
+<span class="n">PRESENCE</span> <span class="o">=</span> <span class="s1">&#39;presence&#39;</span>
+<span class="n">MSG</span> <span class="o">=</span> <span class="s1">&#39;msg&#39;</span>
+<span class="n">TO</span> <span class="o">=</span> <span class="s1">&#39;to&#39;</span>
+<span class="n">FROM</span> <span class="o">=</span> <span class="s1">&#39;from&#39;</span>
+<span class="n">MESSAGE</span> <span class="o">=</span> <span class="s1">&#39;message&#39;</span>
+<span class="n">MAIN_CHANNEL</span> <span class="o">=</span> <span class="s1">&#39;#all&#39;</span>
+<span class="n">SERVER</span> <span class="o">=</span> <span class="s1">&#39;server&#39;</span>
+
+<span class="n">GET_CONTACTS</span> <span class="o">=</span> <span class="s1">&#39;get_contacts&#39;</span>
+<span class="n">USER_LOGIN</span> <span class="o">=</span> <span class="s1">&#39;user_login&#39;</span>
+
+<span class="n">BASIC_NOTICE</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">OK</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">ACCEPTED</span> <span class="o">=</span> <span class="mi">202</span>
+<span class="n">WRONG_REQUEST</span> <span class="o">=</span> <span class="mi">400</span>
+<span class="n">SERVER_ERROR</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">IMPORTANT_NOTICE</span> <span class="o">=</span> <span class="mi">101</span>  <span class="c1"># важное уведомление.</span>
+<span class="n">CREATED</span> <span class="o">=</span> <span class="mi">201</span>  <span class="c1"># объект создан;</span>
+<span class="n">NO_AUTH</span> <span class="o">=</span> <span class="mi">401</span>  <span class="c1"># не авторизован;</span>
+<span class="n">WRONG_PASSW</span> <span class="o">=</span> <span class="mi">402</span>  <span class="c1"># неправильный логин/пароль;</span>
+<span class="n">BANNED</span> <span class="o">=</span> <span class="mi">403</span>  <span class="c1"># (forbidden) — пользователь заблокирован;</span>
+<span class="n">NOT_FOUND</span> <span class="o">=</span> <span class="mi">404</span>  <span class="c1"># (not found) — пользователь/чат отсутствует на сервере;</span>
+<span class="n">CONFLICT</span> <span class="o">=</span> <span class="mi">409</span>  <span class="c1"># (conflict) — уже имеется подключение с указанным логином;</span>
+<span class="n">GONE</span> <span class="o">=</span> <span class="mi">410</span>  <span class="c1"># (gone) — адресат существует, но недоступен (offline).</span>
+<span class="n">INTERNAL_ERROR</span> <span class="o">=</span> <span class="mi">500</span>  <span class="c1"># ошибка сервера.</span>
+<span class="n">SHUTDOWN</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Выключение сервера</span>
+<span class="n">UNKNOWN_ERROR</span> <span class="o">=</span> <span class="mi">999</span>  <span class="c1"># Нестандартная ошибка</span>
+
+<span class="n">StandartServerCodes</span> <span class="o">=</span> <span class="n">BASIC_NOTICE</span><span class="p">,</span> <span class="n">OK</span><span class="p">,</span> <span class="n">ACCEPTED</span><span class="p">,</span> <span class="n">WRONG_REQUEST</span><span class="p">,</span> <span class="n">SERVER_ERROR</span><span class="p">,</span> <span class="n">IMPORTANT_NOTICE</span><span class="p">,</span> <span class="n">CREATED</span><span class="p">,</span> <span class="n">NO_AUTH</span><span class="p">,</span> <span class="n">WRONG_PASSW</span><span class="p">,</span> <span class="n">BANNED</span><span class="p">,</span> <span class="n">NOT_FOUND</span><span class="p">,</span> <span class="n">GONE</span><span class="p">,</span> <span class="n">INTERNAL_ERROR</span><span class="p">,</span> <span class="n">SHUTDOWN</span>
+
+<span class="c1"># База данных для хранения данных сервера:</span>
+<span class="n">SERVER_DATABASE_NAME</span> <span class="o">=</span> <span class="s1">&#39;server_base.db3&#39;</span>
+<span class="n">SERVER_DATABASE</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;sqlite:///</span><span class="si">{</span><span class="n">SERVER_DATABASE_NAME</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="n">COMMON_CHAT</span> <span class="o">=</span> <span class="s2">&quot;Общий чат&quot;</span>
+<span class="n">COMMON_CHAT_PWD</span> <span class="o">=</span> <span class="s2">&quot;11&quot;</span>
+
+<span class="n">CLIENT_DATABASE_NAME</span> <span class="o">=</span> <span class="s1">&#39;client_base.db3&#39;</span>
+<span class="n">CLIENT_DATABASE</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;sqlite:///</span><span class="si">{</span><span class="n">CLIENT_DATABASE_NAME</span><span class="si">}</span><span class="s1">&#39;</span>
+
+
+<div class="viewcode-block" id="UnknownCode"><a class="viewcode-back" href="../modules/messenger.html#config.UnknownCode">[документация]</a><span class="k">class</span> <span class="nc">UnknownCode</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Неизвестный код ответа </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="si">}</span><span class="s1">&#39;</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="o">...</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">messenger</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/logs.html">Log configs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/messenger.html">Messenger</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Код модуля</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Pavel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
